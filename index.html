@@ -1,1 +1,187 @@
 
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Accessories Store</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #f4f6f9;
+    color: #333;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('https://via.placeholder.com/1200x600');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.hero a {
+    background: #25D366;
+    padding: 12px 25px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* PRODUCTS */
+.container {
+    padding: 40px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.price {
+    color: #0a74da;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #0a2540;
+    color: white;
+}
+
+/* FLOATING WHATSAPP */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 50%;
+    text-decoration: none;
+}
+</style>
+
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>MUSTAPHA ELECTRONICS</h1>
+    <h1>Accessories Bora za Simu & Kompyuta</h1>
+    <p> USB-Fast Charger • Earphones • Mouse • Na bidhaa nyingi zaidi</p>
+    <a href="https://wa.me/255789111742text=Nataka kujua bidhaa zako">Wasiliana WhatsApp</a>
+</section>
+
+<!-- PRODUCTS -->
+<div class="container">
+    <h2 style="margin-bottom:20px;">Bidhaa Zetu</h2>
+
+    <div class="products">
+
+        <div class="card">
+            <img src="device1.png" alt="">
+            <div class="card-body">
+                <h3>USB-Fast Charger full</h3>
+                <p class="price">TZS 10,000</p>
+                <a class="btn" href="https://wa.me/255789111742text=Nahitaji Fast Charger">Agiza WhatsApp</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="device5.png" alt="">
+            <div class="card-body">
+                <h3>Wireled and wireless Earphones</h3>
+                <p class="price">TZS 5,000</p>
+                <a class="btn" href="https://wa.me/255789111742text=Nahitaji Earphones">Agiza WhatsApp</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="device3.png" alt="">
+            <div class="card-body">
+                <h3>Computer charging Mouse</h3>
+                <p class="price">TZS 15,000</p>
+                <a class="btn" href="https://wa.me/255789111742text=Nahitaji Mouse">Agiza WhatsApp</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Accessories Store | Mawasiliano ya haraka kupitia WhatsApp</p>
+</footer>
+
+<!-- FLOATING BUTTON -->
+<a class="whatsapp-float" href="https://wa.me/255789111742text=Habari, nahitaji maelezo ya bidhaa zako" target="_blank">
+    💬
+</a>
+
+</body>
+</html>
